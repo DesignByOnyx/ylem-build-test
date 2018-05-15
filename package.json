@@ -1,0 +1,30 @@
+{
+  "name": "ylem-build-test",
+  "version": "0.0.1",
+  "description": "A test repo for compiling ylem and inspecting its dependencies",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production node build"
+  },
+  "author": "Ryan Wheale",
+  "license": "ISC",
+  "dependencies": {
+    "fbjs": "^0.8.16",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "ylem": "^2.0.0"
+  },
+  "devDependencies": {
+    "steal": "^1.11.6",
+    "steal-tools": "^1.11.8"
+  },
+  "steal": {
+    "map": {
+      "react": "@empty",
+      "react-dom": "@empty",
+      "prop-types": "@empty",
+      "fbjs": "@empty"
+    }
+  }
+}
